@@ -1,0 +1,72 @@
+/* Saya menggunakan eksternal CSS */
+/*  BUAT KESELURUHAN HTML */
+body {
+    font-family: Tahoma, Arial; 
+    background: #f7f6e3;
+    color:#5d4037;
+    margin:10px 20px;
+    padding:20px 20px;
+}
+    /* BUAT BOX  */
+.ini-box{
+    background-color:#000307;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+}
+/*  BUAT FOTO */
+.foto{
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    border:3px solid white;
+    border-radius: 4px;
+    width: 150px;
+    height: 200px;
+    transition: 0.3s;
+}
+/* BUAT ISI BOX */
+.ini-info{
+    font-size: 17px;
+    color:#d4af37;
+    margin: 4px 10px;
+}
+/* LINK KONTAK li */
+.linkkontak li{
+    margin-bottom: 10px;
+}
+.linkkontak:hover{
+    text-decoration: underline;
+    color:#d4af37
+}
+.foto:hover{
+    transform: scale(2);
+}
+/* BUAT TABLE */
+.pendidikan{
+margin:10px;
+}
+table{
+    width: 100%;
+    height: 2px;
+    border-collapse: collapse;
+    font-size: 15px;
+    margin-top: 12px; 
+}
+th{
+    background: #333;
+    color:white;
+    padding:10px, 14px;
+}
+td{
+    padding:10px, 14px;
+    border:2px solid #000307
+}
+.kemampuan{
+    margin:10px;
+}
+.halaman{
+    text-align: center;
+}
