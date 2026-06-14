@@ -1,72 +1,90 @@
 /* Saya menggunakan eksternal CSS */
 /*  BUAT KESELURUHAN HTML */
 body {
-    font-family: Tahoma, Arial; 
-    background: #f8fafc;
-    color:#1e293b;
-    margin:10px 20px;
-    padding:20px 20px;
+    font-family: Verdana, sans-serif; /* font ke semua*/
+    background: #f8fafc;         /* warna latar belakang website*/
+    color:#1e293b;              /* mengubah warna text utama*/
+    max-width: 900px;                /*lebar halaman maksimal*/
+    margin:auto;                     /*halaman di tengah tab*/
+    padding:20px;                   /*memberi jarak isi dari halaman tepi*/
+}
+.h1{
+    font-size: 28px;                /*untuk ukuran font h1*/
+    margin-bottom: 6px;             /* margin bagian bawah*/
+}
+.h2{
+    font-size: 20px;                /*ukuran font h2*/
+    letter-spacing: 1px;            /*mengatur jarak antara huruf*/
+    color:#1a1a2e;              /*text color*/
+    border-left: 4px solid #1a1a2e;/*border sebelah kiri*/
+    padding-left: 10px;             /*jarak border dan text*/
+    margin-bottom: 16px;            /*jarak text h2 ke hr*/
 }
     /* BUAT BOX  */
 .ini-box{
-    background-color:#0f172a;
-    color: #ffffff;
-    padding: 15px 20px;
-    display: flex;
-    align-items: center;
+    background-color:#0f172a;   /*backround warna box*/
+    color: #ffffff;             /*warna text*/
+    padding: 20px;                  /*jarak text keatas bawah*/
+    display: flex;                  /*sejajar ke samping*/
+    align-items: center;            /*tulisan ke tengah*/
 }
 /*  BUAT FOTO */
 .foto{
-    width: 180px;
-    height: 200px;
-    object-fit: cover;
-    object-position: top;
-    border:3px solid #cbd5e1;
-    border-radius: 8px;
-    transition: 0.3s;
+    width: 180px;                   /*lebar foto*/
+    height: 200px;                  /*tinggi foto*/
+    object-fit: cover;              /*menyesuaikan foto*/
+    object-position: top;           /*objek atas sebagai fokus*/
+    border:3px solid #cbd5e1;   /*mengatur borde/garis tepir*/
+    border-radius: 8px;             /*ujung sudut sedikit melengkung*/
+    transition: 0.3s;               /*efek animasi*/
+}
+.foto:hover{
+    transform: scale(1.2);          /*memperbesargambar saat kursor ke foto*/
 }
 /* BUAT ISI BOX */
 .ini-info{
-    font-size: 17px;
-    color:whitesmoke;
-    margin: 4px 10px;
+    color:whitesmoke;           /*warna texkt*/
+    margin: 20px;                   /*jarak atas bawah*/
 }
-/* LINK KONTAK li */
-.linkkontak li{
-    margin-top: 10px;
-    color: #0f172a;
-    text-decoration: none;
-    font-weight: bold;
+/* LINK KONTAK li */ 
+.linkkontak a{
+    display: inline-block;          /*buat blok/bisa di kasih padding*/
+    padding: 8px 16px;              /*buat area atas/bawah/kanan/kiri*/
+    background-color: #1a1a2e;  /*backround warna*/
+    color: white;                /*color warna text*/
+    text-decoration: none;           /*menghilangkan underline*/
+    border-radius: 5px;              /*ujung sudut sedikit melengkung*/
+    font-weight: bold;                /*buat text tebal*/
+    font-size: 15px;                  /*ukuran font text*/
+    transition:0.3s;                /*animasi perubahan warna*/
 }
-.linkkontak:hover{
-    text-decoration: underline;
-    color:#38bdf8;
+.linkkontak a:hover{
+    text-decoration: underline;      /*tampilin garis bawah */
+    background: #475569;         /*backround saat kursor di arahkan*/
 }
-.foto:hover{
-    transform: scale(2);
-}
+
 /* BUAT TABLE */
 .pendidikan{
-margin:10px;
+margin-top:20px;                     /*jarak batas atas table ke hr*/
 }
 table{
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 15px;
-    margin-top: 12px; 
+    width: 100%;                     /**/
+    border-collapse: collapse;      /*gabung*/
+    font-size: 15px;                 /*atur ukuran text*/
+    margin-top: 12px;               /* jarak atas table/bawah hr*/
 }
 th{
-    background: #333;
-    color:white;
-    padding:10px, 14px;
+    background: #333;            /*mengatur warna head table*/
+    color:white;                     /*warna text*/
+    padding:10px 14px;                   /**/
 }
 td{
-    padding:10px, 14px;
-    border:2px solid #000307
+    padding: 10px 14px;              /*kasih ruang data*/
+    border:2px solid #cbd5e1        /*garis tepi*/
 }
 .kemampuan{
-    margin:10px;
+    margin-top:20px;
 }
 .halaman{
-    text-align: center;
+    text-align: center;              /*tulisan ke tengah*/
 }
