@@ -12,16 +12,16 @@
 NAMA    : Rizqi Wahyu Saputra
 NIM     : 250401010478
 KELAS   : IF210
-MKU     : Pemograman WEB 1
+MK      : Pemograman WEB 1
 DOSEN   : Riad Sahara, S.SI,.M.T.
 <-=============================================================-->
-<body>
+<body id="top">
     <!-- ==INI HEADER== -->
 
     <div class="ini-box">
         <img src="./foto/rizqi.png" alt="foto profil rizqi" class="foto">
         <div class="ini-info">
-        <h1>Rizqi Wahyu Saputra</h1>
+        <h1 class="h1">Rizqi Wahyu Saputra</h1>
         <!-- HEADING 1(SATU) -->
         <p><b>NIM</b>      : 250401010478</p>
         <p><b>KELAS</b>    : IF210</p>
@@ -31,8 +31,8 @@ DOSEN   : Riad Sahara, S.SI,.M.T.
 
     <!-- TENTANG SAYA -->
 
-    <div class="tentang saya">
-        <h2>Tentang Saya</h2>
+    <div>
+        <h2 class="h2">Tentang Saya</h2>
          <!-- HEADING 2(DUA) -->
         <hr>
             <!-- Paragraf 1 Perkenalan Diri -->
@@ -40,56 +40,56 @@ DOSEN   : Riad Sahara, S.SI,.M.T.
                 underline(tulisan garis bawah)-->
          <P>
             Perkenalkan, Nama saya <strong>Rizqi Wahyu Saputra</strong>,
-            mahaiswa semester[2] progam studi <em>Informatika PJJ S1</em> di 
+            mahasiswa semester[2] progam studi <em>Informatika PJJ S1</em> di 
             Universitas Siber Asia. Saya adalah mahasiswa Teknik informatika
-            yang memiliki semngat belajar tinggi dan minat dalam <u>pengembangan web</u>.
+            yang memiliki semangat belajar tinggi dan minat dalam <u>pengembangan web</u>.
             Saat ini saya aktif mempelajari Pemograman web, basis data, dan
             pengembangan aplikasi memalui tugas kuliah.
         </P>
         <P>
             Sebagai mahasiswa online, saya terbiasa belajar secara <strong>mandiri
-            dan disiplin</strong>. Terget saya adalah menjadi <em>Full Stack
+            dan disiplin</strong>. Target saya adalah menjadi <em>Full Stack
             Developer</em> yang mampu membangun aplikasi berbasis web yang
-            berguna. Saya percaya bahwa <u>Kkonsistensi</u> adalah <strong>
+            berguna. Saya percaya bahwa <u>konsistensi</u> adalah <strong>
             kunci</strong> utama belajar pemograman.
         </P>
     </div>
 
     <!-- LINK -->
 
-    <div>
-        <h2>Link & Kontak</h2>
+    <div class="linkdiv">
+        <h2 class="h2">Link & Kontak</h2>
         <!-- Heading 2(Dua) -->
         <hr>
-        <ul  class="linkkontak">
-            <li><a href="https://github.com/RoronoaZoro-cell" target="blank" >Github</a></li>
+        <div  class="linkkontak">
+            <a href="https://github.com/RoronoaZoro-cell" target="_blank" >Github</a>
             <!-- Link ke Akun Github -->
-            <li><a href="https://www.instagram.com/maverizme/" target="blank">Instagram</a></li>
+            <a href="https://www.instagram.com/maverizme/" target="_blank">Instagram</a>
             <!-- Link ke Akun Instagram -->
-            <li><a href="mailto:rizqiwahyusaputraa@gmail.com" target="blank">Email Saya</a></li>
+            <a href="mailto:rizqiwahyusaputraa@gmail.com" target="_blank">Email Saya</a>
             <!-- Link ke Email Saya -->
              <!-- target=blank otomatis membuka tab baru -->
-        </ul>
+        </div>
     </div> 
 
     <!-- FOTO AKTIFITAS -->
     <div>
-        <h2>Galeri Aktifitas</h2>
+        <h2 class="h2">Galeri Aktifitas</h2>
         <!-- Heading 2(Dua) -->
         <hr>
         <ul type="none"> <!--type none adalah menghilangkan tanda list-->
-            <li><img src="./foto/coding.jpeg" alt="kegiatan Coding" class="foto"></li>
-            <p class="deskripsi"> Kegiatan Proyek Website Menggunakan <strong> HTML </strong>dan <strong>CSS</strong> </p>
-            <li><img src="./foto/akademik.jpeg" alt="Kegiatan Akademik" class="foto"></li>
-            <p class="deskripsi">Mengikuti Perkuliahan dan Mengerjakan Tugas melalui <strong>LMS</strong> Secara Daring</p>
+            <li><img src="./foto/Coding.jpeg" alt="kegiatan Coding" class="foto"></li>
+                <p class="deskripsi"> Kegiatan Proyek Website Menggunakan <strong> HTML </strong>dan <strong>CSS</strong> </p>
+            <li><img src="./foto/Akademik.jpeg" alt="Kegiatan Akademik" class="foto"></li>
+                <p class="deskripsi">Mengikuti Perkuliahan dan Mengerjakan Tugas melalui <strong>LMS</strong> Secara Daring</p>
             <li><img src="./foto/olahraga.JPEG" alt="Olahraga(Futsal)" class="foto"></li>
-            <p class="deskripsi">Berolahraga Rutin untuk Menjaga <strong> Kesehatan</strong> dan Meningkatkan <strong> Disiplin Diri</strong> </p>
+                <p class="deskripsi">Berolahraga Rutin untuk Menjaga <strong> Kesehatan</strong> dan Meningkatkan <strong> Disiplin Diri</strong> </p>
         </ul>
     </div>
 
     <!-- Riwayat Pendidikan -->
-    <div class="pendidikan">
-        <h2>Riwayat Pendidikan</h2>
+    <div >
+        <h2 class="h2">Riwayat Pendidikan</h2>
         <!-- Heading 2(Dua) -->
          <hr>
         <!-- Membuat Table -->
@@ -131,8 +131,8 @@ DOSEN   : Riad Sahara, S.SI,.M.T.
          </table>
     </div>
     <!-- Skill Kemampuan -->
-    <div class="Kemampuan">
-    <h2>Kemampuan/Skill</h2>
+    <div>
+    <h2 class="h2">Kemampuan/Skill</h2>
     <hr>
     <table>
         <thead>
@@ -171,22 +171,22 @@ DOSEN   : Riad Sahara, S.SI,.M.T.
     </div>
     <!-- HOBI & MINAT -->
     <div>
-        <h2>Hobi & Minat</h2>
+        <h2 class="h2">Hobi & Minat</h2>
         <hr>
         <ul class="hobi">
-            <li>Olahraga dan Aktifitas Fisik.
-            <li>Mendengarkan Musik.
-            <li>Menonton Video edukatif dan Film.
-            <li>Belajar Teknologi dan Pemograman.
-            <li>Bermain Game Sebagai Hiburan.
+            <li>Olahraga dan Aktifitas Fisik.</li>
+            <li>Mendengarkan Musik.</li>
+            <li>Menonton Video edukatif dan Film.</li>
+            <li>Belajar Teknologi dan Pemograman.</li>
+            <li>Bermain Game Sebagai Hiburan.</li>
         </ul>
     </div>
     <!-- Pengalaman -->
     <div>
-        <h2>Pengalaman</h2>
+        <h2 class="h2">Pengalaman</h2>
         <hr>
         <ul>
-            <li>Membuat website CV sederhana menggunakan <b>HTML dan CSS</b> (2026).</li>
+            <li>Membuat website CV sederhana menggunakan HTML dan CSS(2026).</li>
             <li>Mempelajari dasar-dasar pemrograman C++ dan struktur data melalui proyek perkuliahan.</li>
             <li>Menggunakan MySQL untuk membuat dan mengelola database sederhana.</li>
             <li>Mengerjakan tugas dan proyek secara mandiri maupun kelompok selama perkuliahan.</li>
